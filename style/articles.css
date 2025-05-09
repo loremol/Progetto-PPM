@@ -96,6 +96,10 @@ main {
     margin: 0 auto;
 }
 
+#side-articles {
+    grid-column: 2;
+}
+
 .side-article-author {
     font-family: serif;
     color: #757575;
@@ -109,9 +113,6 @@ main {
 }
 
 @media (max-width: 1070px){
-    #side-articles {
-        display: none;
-    }
     main {
         border-top: 1px solid lightgray;
         grid-template-columns: 1fr;
@@ -121,7 +122,21 @@ main {
     .main-topics {
         border-right: none;
     }
+
+    .main-topics figure {
+        text-align: right;
+    }
+
     .topic {
         grid-template-columns: 1fr;
+    }
+
+    .tall-article-title {
+        margin-top: 5px;
+    }
+
+    /*put the side articles under the main topics*/
+    #side-articles {
+        grid-column: 1;
     }
 }
