@@ -2,8 +2,10 @@
     border-bottom: 2px solid lightgray;
     margin-bottom: 1px;
     padding: 0 0 30px 0;
+    grid-column: 1 / -1;
 }
-.bottom-category {
+
+.more-news-category {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 15px;
@@ -36,7 +38,7 @@
 }
 
 @media (max-width: 1070px) {
-    .bottom-category {
+    .more-news-category {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
