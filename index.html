@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The New York Times - Breaking News, US News, World News and Videos</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header id="body-header">
+        <div class="header-top-part">
+            <button class="header-button" id="search-button" aria-label="search">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.3,9.2C11.7,8.4,12,7.5,12,6.5C12,3.5,9.5,1,6.5,1S1,3.5,1,6.5S3.5,12,6.5,12c1,0,1.9-0.3,2.7-0.7l3.3,3.3c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L11.3,9.2zM6.5,10.3c-2.1,0-3.8-1.7-3.8-3.8c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C10.3,8.6,8.6,10.3,6.5,10.3z"
+                          fill="#333333"/>
+                </svg>
+            </button>
+            <div id="editions">
+                <a href="index.html" class="edition-button">U.S.</a>
+                <a href="index.html" class="edition-button">INTERNATIONAL</a>
+                <a href="index.html" class="edition-button">CANADA</a>
+                <a href="index.html" class="edition-button">ESPAÑOL</a>
+            </div>
+            <div id="account-actions-buttons">
+                <strong>
+                    <a href="index.html" class="blue-button">SUBSCRIBE FOR €0.50/WEEK</a>
+                    <a href="index.html" class="blue-button">LOG IN</a>
+                </strong>
+            </div>
+        </div>
+        <div id="daily-updates">
+            <div id="today">
+                <p><time id="today-day">
+                    Thursday, April 10, 2025
+                </time></p>
+                <p><a href="index.html">Today's Paper</a></p>
+            </div>
+            <button class="header-button" id="burger-button" aria-label="open-nav">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <a id="logo" href="index.html">The New York Times</a>
+            <button class="header-button" id="account-button" aria-label="account-settings">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#292D32"/>
+                    <path d="M12.0002 14.5C6.99016 14.5 2.91016 17.86 2.91016 22C2.91016 22.28 3.13016 22.5 3.41016 22.5H20.5902C20.8702 22.5 21.0902 22.28 21.0902 22C21.0902 17.86 17.0102 14.5 12.0002 14.5Z" fill="#292D32"/>
+                </svg>
+            </button>
+            <p id="stock-market">Nasdaq <span id="stock-market-gain">+1.52%</span></p>
+        </div>
+        <nav id="sections-nav">
+            <a href="index.html">U.S.</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">World</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Business</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Arts</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Lifestyle</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Opinion</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+
+            <a href="index.html" style="border-left: 1px solid lightgray; padding-left: 12px">Audio</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Games</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Cooking</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">Wirecutter</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+            </svg>
+            <a href="index.html">The Athletic</a>
+            <svg width="8" height="5" viewBox="0 0 13 8">
+                        <polygon fill="#979797" points="6.5,8 0,1.4 1.4,0 6.5,5.2 11.6,0 13,1.4"></polygon>
+                    </svg>
+        </nav>
+        <div id="today-subscribe-small">
+            <time>Sunday, May 4, 2025</time>
+            <button>Subscribe for €0.50/week</button>
+        </div>
+    </header>
+    <div id="live-updates">
+        <strong class="live-breaking">LIVE</strong>
+        <div class="small-breaking-news">
+            <span class="small-breaking-title"><a href="index.html">Breaking news topic 1</a></span>
+            <span class="live-time-published most-recent-update">20m ago</span>
+        </div>
+        <div class="small-breaking-news">
+            <span class="small-breaking-title"><a href="index.html">Breaking news topic 2</a></span>
+            <span class="live-time-published most-recent-update">24m ago</span>
+        </div>
+        <div class="small-breaking-news">
+            <span class="small-breaking-title"><a href="index.html">Breaking news topic 3</a></span>
+            <span class="live-time-published old-update">30m ago</span>
+        </div>
+    </div>
+    <main>
+        <section class="main-topics">
+            <section class="topic">
+                <div>
+                    <article class="article-box">
+                        <h1 class="article-title"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in tortor quis est dapibus vehicula. </a></h1>
+                        <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien risus, iaculis non justo ullamcorper, faucibus malesuada tellus. Vivamus vitae leo mattis. </a></p>
+                        <p class="read-time">5 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <a href="index.html"><h1 class="article-title-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida. </h1></a>
+                        <p class="read-time">5 MIN READ</p>
+                    </article>
+                </div>
+
+                <a href="index.html">
+                    <figure>
+                        <img src="https://placehold.co/1200x600" alt="topic-1">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <section class="topic">
+                <div class="hot-topic-links">
+                    <h1 class="recent-topic-title">
+                        <span><strong><a href="index.html">Recent topic title</a></strong></span>
+                        <span><a href="index.html">Topic aspect 1</a></span>
+                        <span><a href="index.html">Topic aspect 2</a></span>
+                        <span><a href="index.html">Topic aspect 3</a></span>
+                        <span><a href="index.html">Topic aspect 4</a></span>
+                    </h1>
+                </div>
+                <div>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat, sem. </a></h2>
+                        <p class="article-summary"><a href="index.html">Duis ut libero sit amet urna eleifend rutrum non eu quam. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ornare nec elit eget pulvinar. </a></p>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem Ipsum</a></h2>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/1200x700" alt="hot-topic-1">
+                            <figcaption>Author name</figcaption>
+                        </figure>
+                    </a>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel. </a></h2>
+                        <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper orci lacus, at venenatis tellus venenatis et. </a></p>
+                        <p class="read-time">5 MIN READ</p>
+                    </article>
+                </div>
+            </section>
+            <section class="topic">
+                <div class="hot-topic-links">
+                    <h1 class="recent-topic-title">
+                        <span><strong><a href="index.html">Recent topic title</a></strong></span>
+                        <span><a href="index.html">Topic aspect 1</a></span>
+                        <span><a href="index.html">Topic aspect 2</a></span>
+                        <span><a href="index.html">Topic aspect 3</a></span>
+                        <span><a href="index.html">Topic aspect 4</a></span>
+                    </h1>
+                </div>
+                <div>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat, sem. </a></h2>
+                        <p class="article-summary"><a href="index.html">Duis ut libero sit amet urna eleifend rutrum non eu quam. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ornare nec elit eget pulvinar. </a></p>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem Ipsum</a></h2>
+                        <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <h2 class="article-title-small"><a href="index.html">Lorem Ipsum</a></h2>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                </div>
+                <a href="index.html">
+                    <figure>
+                        <img src="https://placehold.co/1200x700" alt="hot-topic-2">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <section class="topic">
+                <div>
+                    <article class="article-box">
+                        <h1 class="article-title-small"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat, sem. </a></h1>
+                        <p class="article-summary"><a href="index.html">Duis ut libero sit amet urna eleifend rutrum non eu quam. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ornare nec elit eget pulvinar. </a></p>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <h1 class="article-title-small"><a href="index.html">Lorem Ipsum</a></h1>
+                        <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+                        <p class="read-time">2 MIN READ</p>
+                    </article>
+                </div>
+                <a href="index.html">
+                    <figure>
+                        <img src="https://placehold.co/1200x700" alt="topic-2">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <div id="tip">
+                <p><strong>Got a Tip?</strong> The Times offers several ways to send important information confidentially ›</p>
+            </div>
+            <section class="topic">
+                <h1 class="topic-name"><strong><a href="index.html">The Great Read</a></strong></h1>
+                <article class="article-box">
+                    <h2 class="tall-article-title"><a href="index.html">Donec placerat urna nec vestibulum porttitor. Fusce sit amet cursus est, quis ultricies</a></h2>
+                    <p class="article-summary"><a href="index.html">Curabitur sagittis mauris non elit hendrerit porttitor. Duis mollis ornare pellentesque. Integer mollis vestibulum ipsum eu rutrum. Vivamus vel cursus.</a></p>
+                    <p class="read-time">31 MIN READ</p>
+                </article>
+                <a href="index.html">
+                    <figure>
+                        <img src="https://placehold.co/1200x700" alt="the-great-read">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                </a>
+            </section>
+
+            <section class="topic padding-top">
+                <div>
+                    <article class="article-box">
+                        <h1 class="tall-article-title"><a href="index.html">Tincidunt odio nec lacus tincidunt vehicula?</a></h1>
+                        <p class="article-summary"><a href="index.html"> Morbi ut aliquam ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vehicula luctus dui.</a></p>
+                        <p class="read-time">12 MIN READ</p>
+                    </article>
+                    <article class="article-box">
+                        <h1 class="article-title-small"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h1>
+                        <p class="read-time">5 MIN READ</p>
+                    </article>
+                </div>
+                <a href="index.html">
+                    <figure>
+                        <img src="https://placehold.co/1200x700" alt="secondary-topic-1">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                </a>
+            </section>
+
+            <section class="games">
+                <h1 class="games-title"><strong>Games</strong> <em>Daily Puzzles</em></h1>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-1">
+                        </figure>
+                    </a>
+                </div>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-2">
+                        </figure>
+                    </a>
+                </div>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-3">
+                        </figure>
+                    </a>
+                </div>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-4">
+                        </figure>
+                    </a>
+                </div>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-5">
+                        </figure>
+                    </a>
+                </div>
+                <div class="game">
+                    <div class="game-description">
+                        <h2><a href="index.html">Game name</a></h2>
+                        <p><a href="index.html">Game description</a></p>
+                    </div>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/90x90" alt="game-6">
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <div id="side-articles">
+            <section class="side-topic">
+                <article class="article-box">
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/330x220" alt="side-article-1">
+                            <figcaption>Author name</figcaption>
+                        </figure>
+                    </a>
+                    <h1 class="article-title"><a href="index.html">Suspendisse sit amet elit ut risus convallis pharetra. Vivamus quis hendrerit.</a></h1>
+                    <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+                    <p class="read-time"><a href="index.html">7 MIN READ</a></p>
+                </article>
+                <div class="navigable-two-article">
+                    <article class="navigable-two-article-left">
+                        <a href="index.html">
+                            <figure>
+                                <img src="https://placehold.co/150x150" alt="a">
+                            </figure>
+                        </a>
+                        <h1><a href="index.html">Integer accumsan tincidunt erat, rhoncus rutrum augue</a></h1>
+                        <p class="read-time"><a href="index.html">6 MIN READ</a></p>
+                    </article>
+                    <article class="navigable-two-article-right">
+                        <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/150x150" alt="a">
+                        </figure>
+                        </a>
+                        <h1><a href="index.html">Ut volutpat viverra urna id dictum. Vivamus</a></h1>
+                        <p class="read-time"><a href="index.html">6 MIN READ</a></p>
+                    </article>
+                </div>
+                <div class="navigable-two-article-buttons-container">
+                    <button class="circle-button" aria-label="scroll-left">
+                        <svg width="26" height="26" class="circle-button-icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <button class="circle-button" aria-label="scroll-left">
+                        <svg width="26" height="26" class="circle-button-icon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="side-topic padding-top">
+                <h1 class="side-topic-name"><strong>Opinion</strong></h1>
+                <article class="article-box">
+                   <p class="side-article-author"><a href="index.html">LOREM IPSUM DOLOR SIT AMET</a></p>
+                   <h2 class="article-title"><a href="index.html">Lorem Ipsum Dolor Sit Amet</a></h2>
+                    <a href="index.html">
+                        <figure>
+                        <img src="https://placehold.co/400x800" alt="side-article-2">
+                        <figcaption>Author name</figcaption>
+                    </figure>
+                    </a>
+                    <h2 class="article-title"><a href="index.html">Lorem Ipsum</a></h2>
+                    <p class="article-summary"><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+                    <p class="read-time"><a href="index.html">7 MIN READ</a></p>
+                </article>
+                <article class="article-box">
+                    <p class="side-article-author"><a href="index.html">LOREM IPSUM DOLOR SIT AMET</a></p>
+                    <h2 class="article-title"><a href="index.html">Title of The Article</a></h2>
+                    <a href="index.html">
+                        <figure>
+                            <img src="https://placehold.co/300x100" alt="side-article-3">
+                            <figcaption>Author name</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </section>
+        </div>
+        <div class="more-news">
+            <section class="bottom-category">
+                <h1>NEWS</h1>
+                <article>
+                    <h2>World News</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>U.S. News</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>U.S. Politics</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>New York</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Business</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Technology</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Science</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Sports</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Obituaries</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>The Upshot</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Climate and Environment</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Education</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Health</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Reader Center</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Explore Times Events</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+            </section>
+            <section class="bottom-category">
+                <h1>OPINION</h1>
+                <article>
+                    <h2>Opinion</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Opinion Columnists</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Editorials</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Guest Essays</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Sunday Opinion</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+            </section>
+            <section class="bottom-category">
+                <h1>ARTS</h1>
+                <article>
+                    <h2>Arts</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Art and Design</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Movies</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Television</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Music</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Theater</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Dance</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Book Review</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+            </section>
+            <section class="bottom-category">
+                <h1>LIVING</h1>
+                <article>
+                    <h2>Style</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Food</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Well</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>The New York Times Magazine</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>T Magazine</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Travel</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Love</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+                <article>
+                    <h2>Real Estate</h2>
+                    <a href="index.html"><picture>
+                        <img src="https://placehold.co/1200x600" alt="a">
+                    </picture></a>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                    <p><a href="index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel gravida. </a></p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <nav id="bottom-nav">
+        <header id="bottom-nav-logo">
+            <a id="small-logo" href="index.html">The New York Times</a>
+        </header>
+        <section class="bottom-nav-section">
+            <h1>
+                NEWS
+            </h1>
+            <a href=index.html>Home Page</a>
+            <a href=index.html>U.S.</a>
+            <a href=index.html>World</a>
+            <a href=index.html>Politics</a>
+            <a href=index.html>New York</a>
+            <a href=index.html>Education</a>
+            <a href=index.html>Sports</a>
+            <a href=index.html>Business</a>
+            <a href=index.html>Tech</a>
+            <a href=index.html>Science</a>
+            <a href=index.html>Weather</a>
+            <a href=index.html>The Great Read</a>
+            <a href=index.html>Obituaries</a>
+            <a href=index.html>Headway</a>
+            <a href=index.html>Visual Investigations</a>
+            <a href=index.html>The Magazine</a>
+</section>
+        <section class="bottom-nav-section">
+            <h1>ARTS</h1>
+            <a href=index.html>Book Review</a>
+            <a href=index.html>Best Sellers Book List</a>
+            <a href=index.html>Dance</a>
+            <a href=index.html>Movies</a>
+            <a href=index.html>Music</a>
+            <a href=index.html>Pop Culture</a>
+            <a href=index.html>Television</a>
+            <a href=index.html>Theater</a>
+            <a href=index.html>Visual Arts</a>
+        </section>
+        <section class="bottom-nav-section">
+            <h1>LIFESTYLE</h1>
+            <a href=index.html>Health</a>
+            <a href=index.html>Well</a>
+            <a href=index.html>Food</a>
+            <a href=index.html>Restaurant Reviews</a>
+            <a href=index.html>Love</a>
+            <a href=index.html>Travel</a>
+            <a href=index.html>Style</a>
+            <a href=index.html>Fashion</a>
+            <a href=index.html>Real Estate</a>
+            <a href=index.html>T Magazine</a>
+        </section>
+        <section class="bottom-nav-section">
+            <h1>OPINION</h1>
+            <a href=index.html>Today's Opinion</a>
+            <a href=index.html>Columnists</a>
+            <a href=index.html>Editorials</a>
+            <a href=index.html>Guest Essays</a>
+            <a href=index.html>Op-Docs</a>
+            <a href=index.html>Letters</a>
+            <a href=index.html>Sunday Opinion</a>
+            <a href=index.html>Opinion Video</a>
+            <a href=index.html>Opinion Audio</a>
+        </section>
+        <section class="bottom-nav-section">
+            <h1>MORE</h1>
+            <a href=index.html>Audio</a>
+            <a href=index.html>Games</a>
+            <a href=index.html>Cooking</a>
+            <a href=index.html>Wirecutter</a>
+            <a href=index.html>The Athletic</a>
+            <a href=index.html>Jobs</a>
+            <a href=index.html>Video</a>
+            <a href=index.html>Graphics</a>
+            <a href=index.html>Trending</a>
+            <a href=index.html>Live Events</a>
+            <a href=index.html>Corrections</a>
+            <a href=index.html>Reader Center</a>
+            <a href=index.html>TimesMachine</a>
+            <a href=index.html>The Learning Network</a>
+            <a href=index.html>School of The NYT</a>
+            <a href=index.html>inEducation</a>
+        </section>
+        <section class="bottom-nav-section" id="bottom-nav-account-section">
+            <h1>ACCOUNT</h1>
+            <a href="index.html"><strong>Subscribe</strong></a>
+            <a href="index.html"><strong>Manage My Account</strong></a>
+            <a href="index.html"><strong>Home Delivery</strong></a>
+            <a href="index.html"><strong>Gift Subscriptions</strong></a>
+            <a href="index.html">Group Subscriptions</a>
+            <a href="index.html">Gift Articles</a>
+            <a href="index.html">Email Newsletters</a>
+            <div style="border-top: 1px solid lightgray; padding-top: 5px">
+                <a href="index.html">NYT Licensing</a><br>
+                <a href="index.html">Replica Edition</a><br>
+                <a href="index.html">Times Store</a><br>
+            </div>
+
+        </section>
+    </nav>
+    <footer>
+        <p>
+            <a href="index.html">© 2025 The New York Times Company</a>
+            <a href="index.html">NYTCo</a>
+            <a href="index.html">Contact Us</a>
+            <a href="index.html">Accessibility</a>
+            <a href="index.html">Work with us</a>
+            <a href="index.html">Advertise</a>
+            <a href="index.html">T Brand Studio</a>
+            <a href="index.html">Your Ad Choices</a>
+            <a href="index.html">Privacy Policy</a>
+            <a href="index.html">Terms of Service</a>
+            <a href="index.html">Terms of Sale</a>
+            <a href="index.html">Site Map</a>
+            <a href="index.html">Help</a>
+            <a href="index.html">Subscriptions</a>
+        </p>
+        <br>
+        <p>
+            <a href="index.html">Manage Privacy Preferences</a>
+        </p>
+    </footer>
+</body>
+</html>

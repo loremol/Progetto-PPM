@@ -1,0 +1,80 @@
+#bottom-nav {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+#bottom-nav-logo {
+    grid-column: 1 / -1;
+    padding-left: 0;
+}
+
+.bottom-nav-section {
+    font-family: "Libre Franklin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+}
+.bottom-nav-section a {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.bottom-nav-section a:hover {
+    text-decoration-line: underline;
+}
+
+.bottom-nav-section h1 {
+    font-size: 13px;
+}
+
+#bottom-nav-account-section {
+    grid-row: 2;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-left: 1px solid lightgray;
+}
+#bottom-nav-account-section a strong {
+    font-size: 16px;
+}
+#bottom-nav-account-section a {
+    font-size: 11px;
+}
+
+@media (max-width: 1070px) {
+    #bottom-nav {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        column-gap: 0;
+        padding: 0 30px 0 30px;
+    }
+    .bottom-nav-section h1 {
+        font-size: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid lightgray;
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+    #bottom-nav-logo {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 10px;
+    }
+
+    .bottom-nav-section a {
+        display: none;
+    }
+    #bottom-nav-account-section {
+        display: none;
+    }
+
+    #bottom-nav-small {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,68 @@
+.navigable-two-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "EB Garamond", serif;
+}
+
+.navigable-two-article article {
+    margin: 15px 0 15px 0;
+}
+
+.navigable-two-article figure {
+    padding: 0;
+}
+
+.navigable-two-article h1 {
+    margin: 0 auto;
+    font-size: 16px;
+}
+.navigable-two-article-left {
+    padding-right: 15px;
+    border-right: 1px solid lightgray;
+}
+.navigable-two-article-left:hover h1{
+    color: #5A5A5A;
+}
+.navigable-two-article-right {
+    padding-left: 15px;
+}
+.navigable-two-article-right:hover h1{
+    color: #5A5A5A;
+}
+.navigable-two-article-buttons-container {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.circle-button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+    margin-left: 10px;
+}
+
+.circle-button:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+}
+
+.circle-button:active {
+    background: #f3f4f6;
+    transform: scale(0.98);
+}
+
+.circle-button-icon {
+    width: 24px;
+    height: 24px;
+    color: #4b5563;
+}

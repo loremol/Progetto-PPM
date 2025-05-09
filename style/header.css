@@ -1,0 +1,220 @@
+header {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+#body-header {
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+.header-top-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* absolute children */
+    padding: 10px;
+}
+
+#sections-nav {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+#sections-nav a,
+#sections-nav svg {
+    display: inline-flex;
+    align-self: center;
+}
+#sections-nav a {
+    margin: 0 2px 0 20px;
+}
+#sections-nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+
+#today-subscribe-small {
+    display: none;
+}
+
+.header-button {
+    position: absolute;
+
+    background-color: transparent;
+
+    border: transparent;
+    border-radius: 3px;
+    padding: 10px;
+    display: inline-flex;
+    vertical-align: text-top;
+    transition: background 0.6s;
+}
+
+#search-button {
+    left: 0;
+}
+
+.header-button:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.edition-button {
+    padding: 7px 8px 6px;
+    background-color: transparent;
+    color: #5A5A5A;
+    font-size: 0.8em;
+    font-family: 'Oswald', sans-serif;
+    border: transparent;
+    border-radius: 3px;
+    transition: background 0.6s;
+}
+.edition-button:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.blue-button {
+    padding: 4px 8px;
+
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    transition: background 0.6s;
+}
+
+.blue-button:hover {
+    cursor: pointer;
+    background-color: rgb(50, 104, 145);
+}
+
+#account-actions-buttons {
+    position: absolute;
+    right: 0;
+}
+
+#daily-updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0 10px 0;
+}
+
+#today {
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+}
+#today a {
+    transition: 0.2s;
+}
+#today a:hover {
+    color: lightgray;
+}
+
+#stock-market {
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    #stock-market-gain {
+        color: green;
+    }
+}
+
+#logo {
+    font-family: 'Chomsky', serif;
+    font-size: 4.3em;
+}
+
+#small-logo {
+    font-family: 'Chomsky', serif;
+    font-size: 1.9em;
+}
+
+#burger-button {
+    display: none;
+}
+
+#account-button {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header-top-part {
+        display: none;
+    }
+
+    #today-subscribe-small {
+        font-family: "Libre Franklin", sans-serif;
+        position: relative;
+        display: revert;
+        padding: 15px;
+        border-top: 1px solid lightgray;
+    }
+    #today-subscribe-small time {
+        font-size: 11px;
+        font-weight: 700;
+    }
+    #today-subscribe-small button {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        background-color: transparent;
+        padding: 5px 12px 5px 12px;
+        border: 1px solid;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+
+    #body-header {
+        border-bottom: none;
+        padding: 0;
+    }
+
+    #burger-button {
+        position: absolute;
+        left: 15px;
+
+        background-color: transparent;
+
+        border: transparent;
+        border-radius: 3px;
+        padding: 10px;
+        display: inline-flex;
+        vertical-align: text-top;
+        transition: background 0.6s;
+    }
+
+    #account-button {
+        display: revert;
+        right: 15px;
+    }
+
+    #sections-nav {
+        display: none;
+    }
+    #logo {
+        font-size: 2em;
+    }
+    #today {
+        display: none;
+    }
+    #stock-market {
+        display: none;
+    }
+
+}
+
+@media (max-width: 740px) {
+    #today-subscribe-small {
+        background-color: #f7f7f7;
+    }
+}

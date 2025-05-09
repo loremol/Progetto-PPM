@@ -1,0 +1,53 @@
+.games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    font-family: "EB Garamond", serif;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 1070px) {
+    .games {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr ;
+    }
+}
+
+.games-title {
+    grid-column: 1 / -1;
+}
+.games-title h1 {
+    font-size: 16px;
+}
+.games-title em {
+    font-weight: 300;
+}
+.games-title strong {
+    font-weight: 900;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+.game:hover h1 {
+    color: #5A5A5A;
+}
+
+.game-description h1 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.game-description h2 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.game-description p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5A5A5A;
+    margin: 0;
+}

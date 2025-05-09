@@ -1,0 +1,7 @@
+@font-face {
+    /* Font: FontName
+   License: SIL Open Font License 1.1
+   See src/fonts/Chomsky/LICENSE.txt for details */
+    font-family: 'Chomsky';
+    src: url("../fonts/Chomsky/Chomsky.woff") format("woff");
+}
