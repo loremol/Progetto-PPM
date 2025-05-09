@@ -35,9 +35,12 @@
     color: #5A5A5A;
 }
 
+.game-description {
+    margin-right: 10px;
+}
+
 .game-description h1 {
     font-size: 15px;
-    margin: 0;
 }
 
 .game-description h2 {
