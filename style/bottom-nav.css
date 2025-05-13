@@ -20,8 +20,8 @@
     grid-row: 2;
 }
 .bottom-nav-section a {
-    padding-bottom: 5px;
-    font-size: 14px;
+    padding-bottom: 7px;
+    font-size: 13px;
 }
 .bottom-nav-section a:hover {
     text-decoration-line: underline;
@@ -29,6 +29,7 @@
 
 .bottom-nav-section h1 {
     font-size: 13px;
+    font-weight: 600;
 }
 
 #bottom-nav-account-section {
